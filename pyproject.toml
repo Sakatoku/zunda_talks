@@ -1,0 +1,13 @@
+[project]
+name = "zunda_talks"
+version = "0.1.0"
+description = "Zunda-mon and Metan-like explanation UI using Streamlit, Gemini, and Voicevox."
+dependencies = [
+    "streamlit>=1.35.0",
+    "google-genai",
+    "requests",
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
