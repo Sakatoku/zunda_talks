@@ -116,5 +116,32 @@ def get_custom_css():
         vertical-align: top !important;
         justify-content: flex-start !important;
     }
+
+    /* --- 具体的に見づらい箇所のテキストカラー微修正 --- */
+
+    /* ヘッダ (Deploy / Hamburger) のアイコンとテキストを濃くする */
+    header[data-testid="stHeader"] * {
+        color: #1a1a1a !important;
+    }
+
+    /* ファイルアップローダーのラベル（「キャッシュファイルまたは...」）を強調 */
+    div[data-testid="stFileUploader"] label p,
+    label[data-testid="stWidgetLabel"] p {
+        color: #1a5d1a !important;
+        font-weight: 600 !important;
+    }
+
+    /* 「現在のキャッシュ状況」全般（Expander, Metrics）の視認性向上 */
+    div[data-testid="stExpander"] summary p {
+        color: #1a5d1a !important;
+        font-weight: 600 !important;
+    }
+    div[data-testid="stMetricLabel"] p {
+        color: #666666 !important;
+        font-weight: 600 !important;
+    }
+    div[data-testid="stMetricValue"] div {
+        color: #1a1a1a !important;
+    }
 </style>
 """
